@@ -17,6 +17,7 @@ jobs:
           push: true
           tags: |
             tsa182/imersao-chatservice:v1
+      
       - name: Docker build webapp
         uses: docker/build-push-action@v4.1.1
         with:
