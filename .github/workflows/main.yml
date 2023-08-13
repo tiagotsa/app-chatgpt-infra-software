@@ -131,6 +131,3 @@ jobs:
           images: |
             tsa182/imersao-chatservice:v${{ github.run_number }}  
             tsa182/imersao-gpt-webapp:v${{ github.run_number }}
-
-    
->>>>>>> e81af0bb4f1aca783648566d06cf6341b79c41ae
