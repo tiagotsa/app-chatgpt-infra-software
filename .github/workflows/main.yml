@@ -21,8 +21,8 @@ jobs:
           file: ./chatservice/Dockerfile
           push: true
           tags: |
-            tsa182/imersao-chatservice:v1
-      
+            tsa182/imersao-chatservice:v${{ github.run_number }}
+            tsa182/imersao-chatservice:latest
       - name: Docker build webapp
         uses: docker/build-push-action@v4.1.1
         with:
@@ -30,7 +30,7 @@ jobs:
           file: ./webapp/Dockerfile
           push: true
           tags: |
-              tsa182/imersao-gpt-webapp:v1
+              tsa182/imersao-gpt-webapp:v${{ github.run_number }}
               tsa182/imersao-gpt-webapp:latest
   CD:
     runs-on: ubuntu-latest
