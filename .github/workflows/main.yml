@@ -54,11 +54,11 @@ jobs:
         run: |
           aws eks update-kubeconfig --name eks-imersao --region us-east-1
       
-      - name: Display dos aplicações
+      - name: Deploy das aplicações
         uses: Azure/k8s-deploy@v4.9
         with:
           manifests: | 
-            k8s/deploy.chatservice.yaml
+            k8s/deploy-chatservice.yaml
           images: |
             tsa182/imersao-chatservice:v${{ github.run_number }}  
             
