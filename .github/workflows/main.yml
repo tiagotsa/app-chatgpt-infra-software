@@ -62,12 +62,5 @@ jobs:
             k8s/deploy-chatservice.yaml
             k8s/deploy-webapp.yaml
           images: |
-<<<<<<< HEAD
             tsa182/imersao-chatservice:v${{ github.run_number }}
             tsa182/imersao-gpt-webapp:v${{ github.run_number }}
-=======
-            fabricioveronez/imersao-chatservice:v${{ github.run_number }}
-            fabricioveronez/imersao-gpt-webapp:v${{ github.run_number }}
-            fabricioveronez/imersao-chatservice:v${{ github.run_number }}
-            fabricioveronez/imersao-gpt-webapp:v${{ github.run_number }}
->>>>>>> 75fd2c5dc4b14db18c58700d6c9bff8c86fa9f8a
