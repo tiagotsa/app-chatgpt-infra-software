@@ -64,3 +64,5 @@ jobs:
           images: |
             fabricioveronez/imersao-chatservice:v${{ github.run_number }}
             fabricioveronez/imersao-gpt-webapp:v${{ github.run_number }}
+            fabricioveronez/imersao-chatservice:v${{ github.run_number }}
+            fabricioveronez/imersao-gpt-webapp:v${{ github.run_number }}
