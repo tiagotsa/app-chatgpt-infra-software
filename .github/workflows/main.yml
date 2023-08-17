@@ -37,6 +37,10 @@ jobs:
     needs: [CI]
     steps:
       - uses: actions/checkout@v3
+<<<<<<< HEAD
+=======
+      
+>>>>>>> fb85ebb5ac925dd991c9056d33d9a168578481d4
       - name: Autenticar o AWS CLI
         uses: aws-actions/configure-aws-credentials@v2
         with:
@@ -63,4 +67,7 @@ jobs:
           images: |
             tsa182/imersao-chatservice:v${{ github.run_number }}
             tsa182/imersao-gpt-webapp:v${{ github.run_number }}
+<<<<<<< HEAD
             
+=======
+>>>>>>> fb85ebb5ac925dd991c9056d33d9a168578481d4
