@@ -43,6 +43,10 @@ spec:
       app: chatservice
   template:
     metadata:
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8080"
+        prometheus.io/path: "/metrics"
       labels:
         app: chatservice
     spec: 
@@ -76,7 +80,7 @@ spec:
           - name: INITIAL_CHAT_MESSAGE
             value: "Seu nome é Jarvis. Você é a inteligência artificial da iniciativa DevOps && Cloud. Você da suporte a programadores e profissionais de infraestrutura."
           - name: OPENAI_API_KEY
-            value: {{API_TOKEN}}
+            value: "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"
           - name: AUTH_TOKEN
             value: "123456"
 ---
